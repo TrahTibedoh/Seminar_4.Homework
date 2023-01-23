@@ -40,27 +40,29 @@ Console.Write(Sum(numb));
 
 //Напишите программу, которая задаёт массив из m элементов и выводит их на экран.
 /*
-int[] CreateArray() 
-
- {
-    Console.Write("Введите количество элементов масива:   ");
-    int m = Convert.ToInt32(Console.ReadLine());
-    int[] myArray = new int[m];
-    for(int i = 0; i < myArray.Length; i++)
+int[] CreateArray(int size)
+{
+    int[] array = new int[size];
+    for(int i = 0; i < size; i++)
     {
-        Console.Write($"Введите элемент масива под индексом {i}:  ");
-        myArray[i] = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine($"Введите элемент масива под индексом {i + 1}");
+        array[i] = Convert.ToInt32(Console.ReadLine());
     }
-    return myArray;
+    return array;
 }
 
 void ShowArray(int[] array)
 {
     for(int i = 0; i < array.Length; i++)
-        Console.WriteLine(array[i]);
+    Console.WriteLine(array[i]);
 
-    Console.WriteLine();    
+    Console.WriteLine();
 }
-int[] newArray = CreateArray();
-ShowArray(newArray);
+
+Console.Write("Введите размер масива: ");
+int newArray = Convert.ToInt32(Console.ReadLine());
+ShowArray(CreateArray(newArray));
 */
+
+
+
